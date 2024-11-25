@@ -35,7 +35,7 @@ public class TestRunnerWithPageObjects {
         registerPage.enableTheToggleBar();
         registerPage.clickOnTheContinueBtn();
 
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 
         //  Account page related actions
         AccountPage accountPage = new AccountPage(driver);
@@ -43,14 +43,14 @@ public class TestRunnerWithPageObjects {
 
         homePage.navigateToLoginPage();
 
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 
         //  Login page related actions
         LoginPage loginPage = new LoginPage(driver);
         loginPage.completeLoginForm(email,pasw);
         loginPage.clickTheLoginBtn();
 
-        Thread.sleep(5000);
+      //  Thread.sleep(2000);
 
         driver.quit();
 

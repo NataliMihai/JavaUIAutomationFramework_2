@@ -34,18 +34,16 @@ public class RegisterPage extends Page {
         lastNameInput.sendKeys(lastName);
         emailNameInput.sendKeys(email);
         paswNameInput.sendKeys(pasw);
-        System.out.println("The Form register was completed with EMAIL: " + email + " and PASSWORD: "+pasw);
+        System.out.println("The Form register was completed with EMAIL: " + email + " and PASSWORD: " + pasw);
     }
 
     public void enableTheToggleBar() {
-//        WebElement privacyToggleBar = new WebElement() {
-//        }
-
-        ScrollManager.scrollToElement(privacyToggleBar);
-        privacyToggleBar.click();
+        ScrollManager.scrollToElement(privacyToogleBar);
+        privacyToogleBar.click();
     }
 
     public void clickOnTheContinueBtn() {
+        ScrollManager.scrollToElement(contitueButton);
         contitueButton.click();
     }
 }

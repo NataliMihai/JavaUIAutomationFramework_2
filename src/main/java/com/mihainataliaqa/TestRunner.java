@@ -77,7 +77,7 @@ public class TestRunner {
         WebElement continueButton = driver.findElement(By.cssSelector("button[type='submit']"));
         continueButton.click();
 
-        Thread.sleep(3000);
+        Thread.sleep(2000);
 
         driver.close();
 
