@@ -38,9 +38,12 @@ public class RegisterPage extends Page {
     }
 
     public void enableTheToggleBar() {
+        ScrollManager.scrollToElement(privacyToogleBar);
+        privacyToogleBar.click();
     }
 
     public void clickOnTheContinueBtn() {
+        ScrollManager.scrollToElement(contitueButton);
         contitueButton.click();
     }
 }
