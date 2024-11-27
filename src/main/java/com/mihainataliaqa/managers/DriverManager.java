@@ -41,9 +41,7 @@ public class DriverManager {
                 break;
             default:
             System.out.println("The browser is NOT definied! " + WEB_DRIVER_TYPE);
-
         }
-
     }
 
     /// metoda statica pentru a obtine instanta Singleton
@@ -61,5 +59,13 @@ public class DriverManager {
         }
         return driver;
     }
+
+public void quiteTheDriver(){
+    driver.quit();
+    driver = null;
+    instance= null;
+    System.out.println("The Browser is closed after running and completing  a test scenario !");
+}
+
 
 }
